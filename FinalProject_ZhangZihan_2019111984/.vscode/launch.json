@@ -1,0 +1,49 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "MakeBuild(win)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/hw01.exe",
+            "args": ["${workspaceFolder}/tri.obj"],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "miDebuggerPath": "gdb.exe",
+            "preLaunchTask": "Makefile"
+        },
+        {
+            "name": "MakeBuild(mac)",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/hw01.out",
+            "args": ["${workspaceFolder}/tri.obj"],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "lldb",
+            "preLaunchTask": "Makefile"
+        },
+        {
+            "name": "MakeBuild(linux)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/hw01.out",
+            "args": ["${workspaceFolder}/tri.obj"],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "miDebuggerPath": "gdb",
+            "preLaunchTask": "Makefile"
+        }
+    ]
+}
